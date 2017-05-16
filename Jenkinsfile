@@ -6,7 +6,7 @@ pipeline {
         parallel(
           "test": {
             echo 'treerterte'
-            mail(subject: 'sdfsfsdfds', body: 'dfgdfgdfdfdfdfgd', from: 'reschrei@gmail.com', to: 'reschrei@live.de', replyTo: 'reschrei@gmail.com')
+            emailext(subject: 'reretretert', body: 'erterterte', to: 'reschrei@live.de')
             
           },
           "prod": {
