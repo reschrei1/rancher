@@ -3,17 +3,8 @@ pipeline {
   stages {
     stage('test') {
       steps {
-        parallel(
-          "test": {
-            echo 'treerterte'
-            emailext(subject: 'reretretert', body: 'erterterte', to: 'reschrei@gmail.com')
-            
-          },
-          "prod": {
-            echo 'werwerwer'
-            
-          }
-        )
+        echo 'treerterte'
+        mail(subject: 'rtzt', body: 'rzrtzrtzrtzrt', to: 'reschrei@gmail.com')
       }
     }
   }
